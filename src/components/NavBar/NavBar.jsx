@@ -13,12 +13,8 @@ const NavBar = () => {
           <li>
             <Link to="/" className="nav_menu_li">Home</Link>
           </li>
-          <li>
-            <Link to="/destinos" className="nav_menu_li">Destinos</Link>
-          </li>
-          <li>
-            <Link to="/actividades" className="nav_menu_li">Actividades</Link>
-          </li>
+          
+        
           <li>
             <Link to="/estilos" className='nav_menu_li'>Catalogo</Link>
           </li>

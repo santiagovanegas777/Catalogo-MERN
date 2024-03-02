@@ -3,12 +3,12 @@ import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import userContext from "./components/Context/userContext";
 import Home from "./components/Home/Home";
-import Destinos from "./components/Destinos/Destinos";
+
 import NavBar from "./components/NavBar/NavBar";
 import Login from "./components/Login/Login";
 import Contacto from "./components/Contacto/Contacto";
 import Footer from "./components/Footer/Footer";
-import DetalleDestino from "./components/Destinos/DetalleDestino";
+
 import NotFound from "./components/NotFound";
 import Registro from "./components/Registro/Registro";
 import AuthRoute from "./components/AuthRoute/AuthRoute";
@@ -16,18 +16,19 @@ import Profile from "./components/Profile/Profile";
 import Logout from "./components/Logout";
 import Carrousel from "./components/Carrousel/Carrousel";
 import UserMenu from './components/Dropdown/UserMenu';
-import Actividades from "./components/Actividades/Actividades";
+import Estilos from "./components/Actividades/Estilos";
+import DetalleEstilos from "./components/Actividades/DetalleEstilos";
+
+
 import {API} from './services/api';
-import DetalleActividad from "./components/Actividades/DetalleActividad";
+
 import ChangePassword from "./components/ChangePassword/changePassword";
-import AñadidoCesta from "./components/Profile/AñadidoCesta";
-import ConfirmarCompra from "./components/ConfirmarCompra/confirmarCompra";
+
 import InfoDatosPersonales from "./components/Profile/InfoDatosPersonales";
 import Admin from './components/Admin/Admin';
 import AdminPost from "./components/Admin/Post/AdminPost";
 import AdminUsers from  "./components/Admin/AdminUsers/AdminUsers"
 import { useNavigate } from "react-router-dom";
-import Estilos from "./components/Actividades/Estilos";
 
 
 function App() {
@@ -82,22 +83,18 @@ function App() {
           />
           <Route path="/logout" element={<Logout setUser={setUser} />} />
           
-          <Route path="/destinos" element={<Destinos />} />
-          <Route path="/destinos/:idDestino" element={<DetalleDestino />} />
+        
 
-          <Route path="/actividades" element={<Actividades />} />
+         
           <Route path="/estilos" element={<Estilos />} />
-          <Route path="/actividades/:idActividad" element={<DetalleActividad/>} />
+          <Route path="/estilos/:idEstilo" element={<DetalleEstilos/>} />
+          
 
           <Route path="/register" element={<Registro />} />
           <Route path="/contacto" element={<Contacto />} />
 
-          <Route path="/añadidoCesta" element={
-            <AuthRoute user={user} component={<AñadidoCesta user={user} />} />
-          } />
-          <Route path="/confirmarCompra" element={
-            <AuthRoute user={user} component={<ConfirmarCompra user={user} />} />
-          } />
+       
+        
           <Route path="/changepsw" element={
             <AuthRoute user={user} component={<ChangePassword user={user} />} />
           } />
