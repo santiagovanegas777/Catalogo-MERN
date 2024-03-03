@@ -1,25 +1,25 @@
 .destination_information{
-    width: 30%;
+    width: 32%;
     display: flex;
     flex-direction: column;
     position: absolute;
-    font-size: 1em;
-    font-family: 'Anton', sans-serif;
+    font-size: 3em;
+    font-family: "Anton", sans-serif;
     color: #fff;
-    right: 90%;
-    top:55%;
+    right: 35%;
+    top: 64%;
     gap: 20px;
 
-     @include small{
-        left: 10%;
-        font-size: 2.5em;
-     }
+    //  @include small{
+    //     left: 10%;
+    //     font-size: 2.5em;
+    //  }
 
-    & .destination_hotel{
-        align-self: center;
-    }
+    // & .destination_hotel{
+    //     align-self: center;
+    // }
 
-    @include mobile{
-        right: 85%;
-    }
+    // @include mobile{
+    //     right: 85%;
+    // }
   }

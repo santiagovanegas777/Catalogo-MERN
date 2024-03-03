@@ -21,17 +21,17 @@ article.destination_card {
     min-width: 100%;
     height: 100%;
 
-    @include small{
-        object-fit: cover;
-    }
-    filter: brightness(50%);
-    @include mobile{
-       object-fit:contain;
-       min-width: 100%;
-       height: 54%;
-       filter:brightness(50%);
+    // @include small{
+    //     object-fit: cover;
+    // }
+    // filter: brightness(50%);
+    // @include mobile{
+    //    object-fit:contain;
+    //    min-width: 100%;
+    //    height: 54%;
+    //    filter:brightness(50%);
 
-    }
+    // }
 
     
 }

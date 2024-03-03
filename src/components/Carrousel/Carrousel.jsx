@@ -24,7 +24,7 @@ const Carrousel = () => {
         if (ref.current) {
             const interval = setInterval(() => {
                 ref.current.splide.go('>');
-            }, 3000);
+            }, 900000);
 
             // Si necesitas detener el autoplay cuando el componente se desmonta,
             // puedes desactivar el intervalo aquí.
