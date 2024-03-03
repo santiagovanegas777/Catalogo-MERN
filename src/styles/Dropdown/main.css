@@ -134,8 +134,8 @@ table {
 }
 
 .dropdown {
-  width: 10%;
-  height: 5%;
+  width: 13%;
+  height: 70%;
   padding-right: 1%;
   padding-left: 1%;
   position: relative;
@@ -143,12 +143,6 @@ table {
   border-radius: 10px;
   align-self: center;
   margin-right: 2%;
-}
-@media only screen and (min-width: 760px) {
-  .dropdown {
-    width: 15%;
-    height: 50%;
-  }
 }
 .dropdown > button.dropdown_button {
   background: inherit;

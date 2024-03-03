@@ -6,8 +6,8 @@ $gradient-2: #a890fe;
 
 //Div dropdown
 .dropdown {
-    width: 10%;
-    height: 5%;
+    width: 13%;
+    height: 70%;
     padding-right: 1%;
     padding-left: 1%;
     position: relative;
@@ -16,10 +16,10 @@ $gradient-2: #a890fe;
     align-self: center;
     margin-right: 2%;
 
-    @include small{
-        width: 15%;
-    height: 50%;
-    }
+    // @include small{
+    //     width: 15%;
+    // height: 50%;
+    // }
     //Button css
 
     &>button.dropdown_button {

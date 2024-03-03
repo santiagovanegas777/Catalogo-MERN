@@ -22,7 +22,7 @@ const renderEstilos = (estilos) => {
        
             
          
-            <p className="actividad_precio">Precio:{estilo.estiloPrice}€</p>
+    
           </div>
         </li>
       </Link>
