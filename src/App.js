@@ -86,8 +86,10 @@ function App() {
         
 
          
-          <Route path="/estilos" element={<Estilos />} />
-          <Route path="/estilos/:idEstilo" element={<DetalleEstilos/>} />
+          <Route path="/estilos" element={<AuthRoute user={user} component={<Estilos user={user}/>} />} />
+          <Route path="/estilos/:idEstilo" element={
+          <AuthRoute user={user} component={<DetalleEstilos user={user}/>} />
+          } />
           
 
           <Route path="/register" element={<Registro />} />

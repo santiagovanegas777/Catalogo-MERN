@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import '../../styles/Actividades/DetalleActividades.css';
 
 const DetalleEstilos = () => {
-    const tipoEstilo = 'estilo';
+    
     const { idEstilo } = useParams();
     const [estilo, setEstilo] = useState(undefined);
   

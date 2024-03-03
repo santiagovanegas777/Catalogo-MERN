@@ -4,10 +4,10 @@ import '../../styles/Actividades/ListActividades.css';
 import { Link } from "react-router-dom";
 
 const renderEstilos = (estilos) => {
-  return estilos.map((estilo, i) => (
+  return estilos.map((estilo) => (
     <article className="article_activity">
-      <Link to={`./${estilo._id}`} style={{ textDecoration: "none" }} key={i}>
-        <li key={estilo.id} className="actividad">
+      <Link to={`./${estilo._id}`} style={{ textDecoration: "none" }} key={estilo._id}>
+        <li key={estilo._id} className="actividad">
           <div className="actividad-imageContainer">
             <img
               src={estilo.estiloImg}
